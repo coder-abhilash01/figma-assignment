@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { CircleQuestionMark } from "lucide-react";
-import './infoScrollbar.css';
+import './InfoScrollbar.css';
 
 
 const InfoTabs = () => {
