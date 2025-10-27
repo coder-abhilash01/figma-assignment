@@ -48,9 +48,9 @@ const CardCarousel = () => {
               className="hidden"
               onChange={handleFile}
             />
-            <div className="absolute right-2 top-12 sm:static flex gap-2 lg:gap-4 xl:gap-4">
-              <CarouselPrevious className="bg-[#262627] xl:p-5 shadow-[2px_1px_12px_rgba(255,255,255,0.2),4px_1px_18px_rgba(0,0,0,0.8)] text-white hover:text-white hover:bg-black border-gray-900/10 cursor-pointer" />
-              <CarouselNext className="bg-[#272829] xl:p-5 shadow-[2px_1px_12px_rgba(255,255,255,0.2),4px_1px_18px_rgba(0,0,0,0.8)] border-gray-800/10 text-white hover:text-white hover:bg-black cursor-pointer" />
+            <div className="absolute right-2 top-12 sm:static flex gap-4 lg:gap-4 xl:gap-5 ">
+              <CarouselPrevious className="bg-[#262627] xl:p-5 shadow-[2px_1px_12px_rgba(255,255,255,0.2),4px_1px_18px_rgba(0,0,0,0.8)] text-white hover:text-white hover:bg-black active:bg-linear-to-r from-[#314a56] to-[#bcbbbbfb] border-0  cursor-pointer" />
+              <CarouselNext className="bg-[#272829] xl:p-5 shadow-[2px_1px_12px_rgba(255,255,255,0.2),4px_1px_18px_rgba(0,0,0,0.8)] text-white hover:text-white hover:bg-black active:bg-linear-to-r from-[#314a56] to-[#bcbbbbfb] border-0 cursor-pointer" />
             </div>
           </div>
         </div>
@@ -58,8 +58,8 @@ const CardCarousel = () => {
         {/* Carousel items */}
         <CarouselContent className="flex overflow-visible pt-6 px- py-4">
           {images.map((image, i) => (
-            <CarouselItem key={i} className="px-2 sm:px-3 lg:px- ">
-              <div className="w-full transition-transform duration-500 ease-out hover:-translate-y-2  hover:-rotate-3 relative z-10 ml-3 ">
+            <CarouselItem key={i} className="px-2 sm:px-3 lg:px-3 ">
+              <div className="w-full transition-transform duration-400 ease-out hover:-translate-y-3 hover:translate-x-1 hover:scale-102 hover:-rotate-2 relative z-10 ml-1 mt-1  ">
                 <img
                   src={image}
                   alt={`img-${i}`}

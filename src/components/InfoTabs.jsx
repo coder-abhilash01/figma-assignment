@@ -63,7 +63,7 @@ const InfoTabs = () => {
       {/* Tabs + Content */}
       <div className="flex flex-col w-full items-center px-0 md:px-1">
         {/* Tabs */}
-        <nav className="relative w-full xl:w-[90%] bg-[#141414] rounded-2xl lg:py-2 py-1 flex justify-between">
+        <nav className="relative w-full xl:w-[95%] bg-[#141414] rounded-2xl lg:py-2 py-1 flex justify-between">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -94,7 +94,7 @@ const InfoTabs = () => {
         </nav>
 
         {/* Text Content */}
-        <div className="yes flex-1 text-white/40 px-4 md:px-2 lg:px-5 sm:text-[13px] md:text-[12px] lg:text-[16px] xl:text-lg flex flex-col gap-4 mt-4 font-light leading-6 overflow-hidden overflow-y-auto max-h-[180px] xl:max-h-[180px] custom-scroll">
+        <div className="yes flex-1 text-white/40 px-4 md:px-2 lg:px-[20.6px] sm:text-[13px] md:text-[12px] lg:text-[16px] xl:text-[17.5px] flex flex-col gap-4 mt-6 font-light leading-6 overflow-hidden overflow-y-auto max-h-[180px] xl:max-h-[180px] custom-scroll">
           <p>
             Hello! I’m Dave, your sales rep here from Salesforce. I’ve been
             working at this awesome company for 3 years now.
